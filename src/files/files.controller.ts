@@ -46,7 +46,7 @@ export class FilesController {
     }
 
     // const secureUrl = `${ file.filename }`;
-    const secureUrl = `${ this.configService.get('HOST_API') }/files/products/${ file.filename }`;
+    const secureUrl = `${ this.configService.get('HOST_API') }/files/product/${ file.filename }`;
 
     return { secureUrl };
   }
