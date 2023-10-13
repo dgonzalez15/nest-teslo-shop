@@ -6,8 +6,10 @@ import { diskStorage } from 'multer';
 import { FilesService } from './files.service';
 
 import { fileFilter, fileNamer } from './helpers';
+import { ApiTags } from '@nestjs/swagger';
 
 
+@ApiTags('File')
 @Controller('files')
 export class FilesController {
   constructor(
